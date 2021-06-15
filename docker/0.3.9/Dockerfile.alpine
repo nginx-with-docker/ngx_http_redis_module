@@ -7,7 +7,7 @@ ARG MODULE_NAME=ngx-http-redis-src
 ARG MODULE_SOURCE=https://github.com/nginx-with-docker/ngx-http-redis-src
 
 RUN cd /usr/src && \
-    curl -L "${MODULE_SOURCE}/archive/refs/tags/v${MODULE_VERSION}.tar.gz" -o "${MODULE_VERSION}.tar.gz" && \
+    curl -L "${MODULE_SOURCE}/archive/refs/tags/${MODULE_VERSION}.tar.gz" -o "${MODULE_VERSION}.tar.gz" && \
     echo "${MODULE_CHECKSUM}  ${MODULE_VERSION}.tar.gz" | shasum -c && \
     tar -zxC /usr/src -f ${MODULE_VERSION}.tar.gz && \
     mv ${MODULE_NAME}-${MODULE_VERSION}/ ${MODULE_NAME} && \
