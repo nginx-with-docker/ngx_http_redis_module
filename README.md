@@ -18,6 +18,14 @@ You can use this module to perform simple caching. There are plans to extend thi
     </thead>
     <tbody>
         <tr>
+            <td>1.21.1</td>
+            <td>0.3.9</td>
+            <td><ul>
+                <li>docker pull soulteary/prebuilt-nginx-modules:ngx-1.21.1-redis-0.3.9</li>
+                <li>docker pull soulteary/prebuilt-nginx-modules:ngx-1.21.1-redis-0.3.0-alpine</li>
+            </ul></td>
+        </tr>
+        <tr>
             <td>1.21.0</td>
             <td>0.3.9</td>
             <td><ul>
